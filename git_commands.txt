@@ -1,0 +1,129 @@
+Git Commands Used in the Assignment
+
+1. Local Repository Setup
+
+git init
+
+Initializes a new Git repository in the project folder.
+
+git branch -m main
+
+Renames the default branch from master to main.
+
+git status
+
+Displays the current repository status and identifies modified, staged, and untracked files.
+
+2. Adding and Committing Files
+
+git add index.html about.html
+
+Adds the HTML files to the staging area.
+
+git add index.html
+
+Stages the modified index.html file.
+
+git add about.html
+
+Stages the modified about.html file.
+
+git commit -m "Create website structure"
+
+Creates the initial commit containing the HTML files.
+
+git commit -m "Update home page"
+
+Records the changes made to the home page.
+
+git commit -m "Add feature branch content"
+
+Records changes made on the feature branch.
+
+3. Branching and Merging
+
+git branch feature
+
+Creates a new branch named feature.
+
+git branch
+
+Displays the available local branches and identifies the current branch.
+
+git switch feature
+
+Switches to the feature branch.
+
+git switch main
+
+Switches back to the main branch.
+
+git merge feature
+
+Merges the feature branch into the current branch.
+
+git reset --hard 36c1579
+
+Resets the current branch to the specified commit. Used to prepare for an explicit merge demonstration.
+
+git merge --no-ff feature -m "Merge feature branch into main"
+
+Merges the feature branch into main while creating a separate merge commit.
+
+git log --oneline --graph --all
+
+Displays the commit history of all branches in a compact graphical format.
+
+4. Git Ignore Implementation
+
+git add .gitignore
+
+Stages the .gitignore file.
+
+git commit -m "Define gitignore rules"
+
+Records the ignore rules in the repository.
+
+5. Undo Operation
+
+git commit -m "Add extra line to about page"
+
+Creates an additional commit for demonstrating the undo operation.
+
+git revert HEAD
+
+Reverses the changes introduced by the latest commit while preserving repository history.
+
+git log --oneline -5
+
+Displays the five most recent commits.
+
+cat about.html
+
+Displays the contents of about.html to verify the reverted changes.
+
+6. GitHub Integration
+
+git remote add origin https://github.com/advaiys/githubsga.git
+
+Connects the local repository to the GitHub remote repository named origin.
+
+git remote -v
+
+Displays the remote repository URLs used for fetching and pushing.
+
+git push -u origin main
+
+Uploads the main branch to GitHub and establishes upstream tracking.
+
+git push -u origin feature
+
+Uploads the feature branch to GitHub and establishes upstream tracking.
+
+git branch -a
+
+Displays all local and remote branches.
+
+GitHub Repository
+
+https://github.com/advaiys/githubsga
